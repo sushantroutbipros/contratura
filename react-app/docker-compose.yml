@@ -1,0 +1,8 @@
+services:
+  contractura:
+    build: .
+    image: contractura-scm:latest
+    container_name: contractura-scm
+    ports:
+      - "8080:80"
+    restart: unless-stopped
